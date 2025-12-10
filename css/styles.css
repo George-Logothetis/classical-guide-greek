@@ -9,7 +9,10 @@ h2 {
 body {
 	font-size: 1.3rem;
 }
-
+	.block {
+		border: 2px solid blue;
+		padding-left: 5px; padding-right: 2px;
+	}
       .float-container {
          background-color: lightblue;
          padding: 20px;
