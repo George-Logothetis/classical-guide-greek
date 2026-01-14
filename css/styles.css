@@ -36,6 +36,7 @@ body {
     }
 
     .play {
+		float: left;
 		min-width: min-content;
 		flex-grow: 0;
 		flex-shrink: 0;
@@ -62,3 +63,35 @@ body {
 		}
 		/*border: 2px solid green;*/
 	}
+		.float-container {
+			display: flex;
+			background-color: cyan;
+			padding-right: 0px;
+			align-items: center;
+			border-radius: 8px;
+			border: 2px solid maroon;
+		}
+
+	   .disc-cover {
+			float: left;
+			width: 200px;
+			height=200px;
+			padding-right: 8px;
+			/*margin: 0px;
+			margin-right: 5px;
+			border-radius: 15px;
+			border: 2px solid blue;
+			vertical-align: center;
+			display: flex; float: right;*/
+		}
+		
+		.menu {
+			padding: 0.5rem;
+			border-radius: 2rem;
+			h2, h3, p, li {
+				margin: 0; margin-left: 2px;
+				padding: 0;
+				vertical-align: center;
+			}
+		}
+
