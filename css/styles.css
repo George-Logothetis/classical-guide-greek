@@ -1,13 +1,17 @@
 h1 {
-	color: red;
+	color: red;  font-size: 2.25rem;
 }
 
 h2 {
-	color: green; font-size: 1.8rem;
+	color: darkgreen; font-size: 1.7rem;
+}
+
+h3 {
+	font-size: 1.3rem;
 }
 
 body {
-	font-size: 1.3rem;
+	font-size: 1.25rem;
 }
 	.block {
 		border: 2px solid blue;
@@ -62,6 +66,9 @@ body {
 			padding: 2px;
 		}
 		/*border: 2px solid green;*/
+		span {
+			background-color: cyan;
+		}
 	}
 		.float-container {
 			display: flex;
