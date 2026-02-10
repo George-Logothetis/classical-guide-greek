@@ -1,9 +1,9 @@
 h1 {
-	color: red;  font-size: 2.25rem;
+	color: red;  font-size: 2.0rem;
 }
 
 h2 {
-	color: darkgreen; font-size: 1.7rem;
+	color: darkgreen; font-size: 1.5rem;
 }
 
 h3 {
@@ -11,10 +11,10 @@ h3 {
 }
 
 body {
-	font-size: 1.25rem;
+	font-size: 1.20rem;
 }
 	.block {
-		border: 2px solid blue;
+		border: 1px solid blue;
 		padding-left: 5px; padding-right: 2px;
 	}
       .float-container {
@@ -28,7 +28,7 @@ body {
 	  }
 
     .recording {
-		background-color: yellow;
+		background-color: pink;
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
@@ -36,7 +36,8 @@ body {
 		vertical-align: center;
 		align-items: center;
 		border: 2px solid blue;
-		margin: 1px;
+		margin: 0px;
+		padding: 0px;
     }
 
     .play {
@@ -46,24 +47,26 @@ body {
 		flex-shrink: 0;
 		background-color: orange;
 		vertical-align: center;
-		padding-top: 5px;
-		border: 3px solid maroon;
+		margin-right:8px;
+		padding-right:0px;
+		border: 2px solid maroon;
     }
 	  
 	.description {
 		background-color: lightyellow;
-		padding-left: 0.5rem;
+		padding: 0.0rem;
 		flex-grow: 1;
 		flex-basis: 50%;
-		h2, h3, h4, p {
+		h2, h3, h4 {
 			text-align:center;
+			background-color: gold;
 		/*	border: 2px solid red; */
 		}
-		h3, h4, p, li {
-			vertical-align: center;
-			margin: 0;
+		h2, h3, h4, p, li {
+			/*vertical-align: center;*/
+			margin: 0px;
 		/*	margin-left: 2px; */
-			padding: 2px;
+			padding: 0px;
 		}
 		/*border: 2px solid green;*/
 		span {
@@ -95,7 +98,8 @@ body {
 		.menu {
 			padding: 0.5rem;
 			border-radius: 2rem;
-			h2, h3, p, li {
+			h2, h3, li {
+				text-align:center;
 				margin: 0; margin-left: 2px;
 				padding: 0;
 				vertical-align: center;
