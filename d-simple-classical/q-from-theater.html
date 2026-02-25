@@ -21,7 +21,15 @@
 	Παραθέτω εδώ, χωρίς άλλα σχόλια, 16 τέτοια κομμάτια. Ευελπιστώ ότι αρκετά
 	απ' αυτά θα σας ελκύσουν το ενδιαφέρον.
 	<p>
-	<button id="play-all">▶️ <b>Play all clips on this page</b></button>
+  <section class="playlist-block" id="global-playlist">
+  <p>
+  <div class="playlist-controls">
+    <button><strong>Play all clips in the page, in sequence.</strong></button>
+    <br>
+    <button id="global-toggle">▶ Start</button>
+    <button id="global-next">⏭</button>
+  </div>
+  </p>
 	<div class="recording">
 		<div class="description">
 		<audio class="play" preload="metadata" controlsList="nodownload noplaybackrate" preload="metadata" controlsList="nodownload noplaybackrate" controls <source src="../audio/classical/bizet_carmen-suite-2-habanera.mp3" type="audio/mpeg"> </audio>
@@ -137,6 +145,7 @@
 		<p>Act III #3 - Waltz: Dance of the Flowers
 		</div>
 	</div>
+  </section>
 	<script src="../js/playlist.js"></script>
   </body>
 </html>
