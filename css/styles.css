@@ -17,20 +17,34 @@ button {
 
 body {
 	font-size: 1.20rem;
+	padding: 4px;
 }
 	.block {
-		border: 1px solid blue;
+		border: 2px solid blue;
 		padding-left: 5px; padding-right: 2px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
 	}
       .float-container {
          background-color: lightblue;
-         padding: 5px;
+         padding: 4px;
       }
 
+/*
       .float-container audio {
          float: left;
          padding: 10px;
 	  }
+*/
+		.float-container {
+			display: flex;
+			/*background-color: cyan;*/
+			padding-right: 0px;
+			align-items: center;
+			border-radius: 8px;
+			border: 2px solid maroon;
+		}
 
     .recording {
 		background-color: pink;
@@ -45,6 +59,12 @@ body {
 		padding: 0px;
     }
 
+	.whole-work {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
     .play {
 		float: left;
 		min-width: min-content;
@@ -52,7 +72,8 @@ body {
 		flex-shrink: 0;
 		background-color: orange;
 		vertical-align: center;
-		margin-right:8px;
+		margin 0px;
+		margin-right:5px;
 		padding-right:0px;
 		border: 2px solid maroon;
     }
@@ -71,33 +92,38 @@ body {
 			/*vertical-align: center;*/
 			margin: 0px;
 		/*	margin-left: 2px; */
-			padding: 0px;
+			padding-left: 8px;
+			padding-right: 3px;
+			padding-top: 3px;
+			padding-bottom: 3px;
 		}
 		/*border: 2px solid green;*/
 		span {
 			background-color: cyan;
 		}
 	}
-		.float-container {
-			display: flex;
-			background-color: cyan;
-			padding-right: 0px;
-			align-items: center;
-			border-radius: 8px;
-			border: 2px solid maroon;
-		}
 
 	   .disc-cover {
 			float: left;
 			width: 200px;
 			height=200px;
-			padding-right: 8px;
-			/*margin: 0px;
-			margin-right: 5px;
+			padding: 0px;
+			padding-right: 15px;
+			margin: 0px;
+			/*margin-right: 5px;
 			border-radius: 15px;
 			border: 2px solid blue;
 			vertical-align: center;
 			display: flex; float: right;*/
+		h2, h3, h4, p, li {
+			/*vertical-align: center;*/
+			margin: 0px;
+		/*	margin-left: 2px; */
+			padding-left: 8px;
+			padding-right: 3px;
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
 		}
 		
 		.menu {
@@ -108,6 +134,12 @@ body {
 				margin: 0; margin-left: 2px;
 				padding: 0;
 				vertical-align: center;
+			}
+			p {
+			padding-left: 8px;
+			padding-right: 3px;
+			padding-top: 3px;
+			padding-bottom: 3px;
 			}
 		}
 
