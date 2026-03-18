@@ -188,3 +188,29 @@ body {
   outline-offset: 3px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
+
+/**
+--------------- Added CSS for Navigation ---------------
+**/
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff9cc;
+  border: 1px solid #e0dca0;
+  padding: 8px 12px;
+  margin: 12px 0;
+}
+
+.page-nav .prev {
+  margin-right: auto;
+}
+
+.page-nav .up {
+  margin: 0 auto;
+}
+
+.page-nav .next {
+  margin-left: auto;
+}
