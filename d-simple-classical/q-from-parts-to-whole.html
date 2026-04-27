@@ -13,6 +13,7 @@
 <nav class="page-nav">
   <a href="q-overtures.html" class="prev">← Προηγούμενο</a>
   <a href="../q-simple-classical.html" class="up">↑ Στην ενότητα</a>
+  <a href="#" class="next"></a>
 </nav>
     <p>
 	Μέχρι τώρα ακούσαμε κυρίως μέρη από μεγαλύτερα έργα ή
@@ -28,17 +29,20 @@
 	Τα τρία έργα που ακολουθούν ανήκουν στον ίδιο συνθέτη, αλλά
 	σε διαφορετικά είδη. Ακούστε τα με τη σειρά που προτείνονται.
 	<p>
-  <section class="playlist-block" id="global-playlist">
-  <p>
+  <section class="playlist-container global-playlist" id="global-playlist" data-playlist="all">
   <div class="playlist-controls">
-    <button><strong>Play all clips in the page, in sequence.</strong></button>
-    <br>
-    <button id="global-toggle">▶ Start</button>
-    <button id="global-next">⏭</button>
+    <p class="playlist-label"><strong>Play all clips in the page, in sequence.</strong></p>
+	<button class="toggle" id="global-toggle">▶ Start</button>
+	<button class="next" id="global-next">⏭</button>
   </div>
   </p>
 	<hr>
-	<p>
+<section class="playlist-container work-playlist" data-playlist="mozart-k525">
+  <div class="playlist-controls">
+    <p class="playlist-label"><strong>Play this complete work in sequence.</strong></p>
+    <button type="button" class="toggle">▶ Start</button>
+    <button type="button" class="next">⏭</button>
+  </div>
 	<div class="recording">
 	<div class="description">
 		<h3>Mozart: Serenade <q></1>Eine Kleine Nachtmusik</q>, K525</h3>
@@ -98,7 +102,14 @@
 		<p>4ο μέρος. Rondo: Allegro</p>
 	</div>
 	</div>
+</section>
 	<hr>
+<section class="playlist-container work-playlist" data-playlist="mozart-k545">
+  <div class="playlist-controls">
+    <p class="playlist-label"><strong>Play this complete work in sequence.</strong></p>
+    <button type="button" class="toggle">▶ Start</button>
+    <button type="button" class="next">⏭</button>
+  </div>
 	<p>
 	<div class="recording">
 	<div class="description">
@@ -149,9 +160,16 @@
 		<p>3ο μέρος. Allegretto</p>
 	</div>
 	</div>
+</section>
 	<hr>
 	<p>
-	<div class="recording">
+<section class="playlist-container work-playlist" data-playlist="mozart-k467">
+  <div class="playlist-controls">
+    <p class="playlist-label"><strong>Play this complete work in sequence.</strong></p>
+    <button type="button" class="toggle">▶ Start</button>
+    <button type="button" class="next">⏭</button>
+  </div>
+  <div class="recording">
 	<div class="description">
 		<h3>Mozart: Piano Concerto #21, K467 in C</h3>
 		<h4>Μότσαρτ — Κοντσέρτο για πιάνο αρ. 21 σε Ντο μείζονα, K.467:</h4>
@@ -162,7 +180,7 @@
 		Ακούστε όλο το έργο και ως <a href="https://www.youtube.com/watch?v=whTEVQ2OizI">youtube video.</a>
 		</p>
 	</div>
-	</div>
+  </div>
 	<div class="recording">
 	<div class="description">
 		<audio
@@ -199,6 +217,9 @@
 		<p>3ο μέρος. Allegro Vivace Assai</p>
 	</div>
 	</div>
+</section>
+	</section>	
+	<hr>
 	<p>
 	Αν η ακρόαση αυτών των έργων σας φάνηκε φυσική και κατανοητή,
 	τότε έχετε ήδη κάνει ένα ουσιαστικό βήμα.
@@ -230,11 +251,11 @@
 	<p>
 	Η πορεία δεν είναι γραμμική· είναι μια σταδιακή διεύρυνση
 	του ακουστικού σας ορίζοντα.
-	</section>	
 	<script src="../js/playlist.js"></script>
 <nav class="page-nav">
   <a href="q-overtures.html" class="prev">← Προηγούμενο</a>
   <a href="../q-simple-classical.html" class="up">↑ Στην ενότητα</a>
+  <a href="#" class="next"></a>
 </nav>
   </body>
 </html>

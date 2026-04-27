@@ -147,12 +147,12 @@ body {
 --------------- Added CSS for playlists ---------------
 **/
 
-.playlist-block {
+/**.playlist-block {
   border-left: 6px solid transparent;
   transition:
     border-left-color 0.2s ease,
     box-shadow 0.2s ease;
-}
+}**/
 
 /* Active playlist session */
 .playlist-playing {
@@ -189,6 +189,57 @@ body {
   box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
+.playlist-container {
+  border-left: 6px solid transparent;
+  transition:
+    border-left-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Global page playlist */
+.global-playlist {
+  background: #fff3cd;
+  border: 2px solid #d6b656;
+  padding: 12px;
+  margin: 20px 0;
+}
+
+/* Local complete-work playlists */
+.work-playlist {
+  background: #f8fbff;
+  border: 1px solid #b8c7dd;
+  padding: 10px;
+  margin: 18px 0;
+}
+
+.global-playlist.playlist-playing {
+  border-left-color: #b45309;
+}
+
+.work-playlist.playlist-playing {
+  border-left-color: #1e40af;
+}
+
+.global-playlist.playlist-paused {
+  border-left-color: #92400e;
+}
+
+.work-playlist.playlist-paused {
+  border-left-color: #6b7280;
+}
+
+.playlist-controls {
+  margin-bottom: 10px;
+}
+
+.playlist-label {
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+  /*font-style: italic;*/
+  background-color: lightgreen;
+  /*border-color: black;*/
+  border: 2px solid black;
+}
 /**
 --------------- Added CSS for Navigation ---------------
 **/
@@ -214,3 +265,28 @@ body {
 .page-nav .next {
   margin-left: auto;
 }
+
+/* Turn navigation links into buttons */
+.page-nav a {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #d9f2d9;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  transition: all 0.15s ease;
+}
+
+/* Hover effect */
+.page-nav a:hover {
+  background-color: #c4eac4;
+  transform: translateY(-1px);
+}
+
+.page-nav .up {
+  background-color: #fff3cd;
+  border-color: #e0a800;
+}
+

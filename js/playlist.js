@@ -297,6 +297,7 @@ function pausePlaylist(name) {
   // ---------------------------------
   // Manual audio play handling
   // ---------------------------------
+document.addEventListener("DOMContentLoaded", () => {
 document.querySelectorAll("audio").forEach(audio => {
 
   audio.addEventListener("play", () => {
@@ -319,6 +320,7 @@ document.querySelectorAll("audio").forEach(audio => {
   });
 
 });
+});
 
 })();
 
@@ -328,19 +330,25 @@ document.querySelectorAll("audio").forEach(audio => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  const container = document.getElementById("global-playlist");
-  if (!container) return;
+  document.querySelectorAll(".playlist-container").forEach(container => {
 
-  registerPlaylist(
-    "all",
-    Array.from(container.querySelectorAll("audio")),
-    container
-  );
+    const name = container.dataset.playlist;
+    if (!name) return;
 
-  attachPlaylistControls(
-    "all",
-    document.getElementById("global-toggle"),
-    document.getElementById("global-next")
-  );
+    // IMPORTANT: only use controls belonging to THIS container
+    const toggleBtn = container.querySelector(":scope > .playlist-controls .toggle");
+    const nextBtn   = container.querySelector(":scope > .playlist-controls .next");
+
+    if (!toggleBtn || !nextBtn) return;
+
+    registerPlaylist(
+      name,
+      Array.from(container.querySelectorAll("audio")),
+      container
+    );
+
+    attachPlaylistControls(name, toggleBtn, nextBtn);
+
+  });
 
 });
