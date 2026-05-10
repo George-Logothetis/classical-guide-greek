@@ -290,3 +290,12 @@ body {
   border-color: #e0a800;
 }
 
+/* For Notices */
+
+.notice {
+  background-color: #fff3cd;
+  border: 2px solid #e0a800;
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 8px;
+}
