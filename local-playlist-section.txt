@@ -1,0 +1,22 @@
+* Global
+
+  <section class="playlist-container global-playlist" id="global-playlist" data-playlist="all">
+  <div class="playlist-controls">
+    <p class="playlist-label"><strong>Παίξτε όλα τα κομμάτια στην σελίδα.</strong></p>
+    <button class="toggle" id="global-toggle">▶ Start</button>
+    <button class="next" id="global-next">⏭</button>
+  </div>
+   ...
+  </section>
+  <script src="../js/playlist.js"></script>
+
+* Local
+
+<section class="playlist-container work-playlist" data-playlist="mozart-k525">
+  <div class="playlist-controls">
+    <p class="playlist-label"><strong>Παίξτε ...</strong></p>
+    <button type="button" class="toggle">▶ Start</button>
+    <button type="button" class="next">⏭</button>
+  </div>
+   ...
+</section>

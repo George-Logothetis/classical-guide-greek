@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Τίτλος Σελίδας</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      margin-top: 1.5em;
+    }
+
+    nav {
+      background-color: #fff8dc;
+      border: 1px solid #e0d8a8;
+      padding: 10px;
+      margin: 20px 0;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .breadcrumb {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .audio-block {
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🔹 PAGE TITLE -->
+  <h1>Τίτλος Κεφαλαίου</h1>
+
+  <p>
+    Σύντομη εισαγωγή 2–3 γραμμών για το τι θα ακούσει και τι να προσέξει ο χρήστης.
+  </p>
+
+  <!-- 🔹 TOP NAVIGATION -->
+  <nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">Αρχική</a> >
+      <a href="parent.html">Γονική Ενότητα</a> >
+      Τρέχουσα Σελίδα
+    </div>
+
+    <!-- Buttons -->
+    <div class="nav-buttons">
+      <a href="prev.html">⬅ Προηγούμενο</a>
+      <a href="parent.html">↑ Επιστροφή</a>
+      <a href="next.html">➡ Επόμενο</a>
+    </div>
+
+  </nav>
+
+  <!-- 🔹 MAIN CONTENT -->
+
+  <h2>Ενότητα 1</h2>
+  <p>
+    Κείμενο καθοδήγησης. Σύντομο, σαφές, εστιασμένο στο τι να ακούσει.
+  </p>
+
+  <div class="audio-block">
+    <h3>Τίτλος κομματιού</h3>
+    <audio controls>
+      <source src="AUDIO_URL_HERE.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <h2>Ενότητα 2</h2>
+  <p>
+    Περισσότερη καθοδήγηση ακρόασης.
+  </p>
+
+  <div class="audio-block">
+    <h3>Άλλο κομμάτι</h3>
+    <audio controls>
+      <source src="AUDIO_URL_HERE.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <!-- 🔹 BOTTOM NAVIGATION -->
+  <nav>
+
+    <div class="nav-buttons">
+      <a href="prev.html">⬅ Προηγούμενο</a>
+      <a href="parent.html">↑ Επιστροφή</a>
+      <a href="next.html">➡ Επόμενο</a>
+    </div>
+
+  </nav>
+
+</body>
+</html>
