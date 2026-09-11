@@ -12,11 +12,11 @@
 
 * Local
 
-<section class="playlist-container work-playlist" data-playlist="mozart-k525">
-  <div class="playlist-controls">
-    <p class="playlist-label"><strong>Παίξτε ...</strong></p>
-    <button type="button" class="toggle">▶ Start</button>
-    <button type="button" class="next">⏭</button>
-  </div>
+  <section class="playlist-container work-playlist" data-playlist="list-name">
+    <div class="playlist-controls">
+      <p class="playlist-label"><strong>Παίξτε ... έργο ...</strong></p>
+      <button type="button" class="toggle">▶ Start</button>
+      <button type="button" class="next">⏭</button>
+    </div>
    ...
-</section>
+  </section>
